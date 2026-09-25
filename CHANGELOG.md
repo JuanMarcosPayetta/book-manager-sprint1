@@ -1,5 +1,10 @@
 # Changelog
 
+## [Ejercicio 4]
+- Servicios de CRUD para las 8 entidades, que delegan en los repositorios.
+- ServicioStock con consultar_stock y descontar_stock, más StockInsuficienteError.
+- ServicioCotizacionDolar con conversión entre monedas usando la cotización del dólar como puente, más CotizacionNoEncontradaError y ConversionNoSoportadaError.
+
 ## [Ejercicio 3]
 - Definición de repositories.py con las interfaces IRepositorio, IRepositorioStock e IRepositorioCotizacionDolar.
 - Un repositorio por entidad y persistencia en archivo CSV.
