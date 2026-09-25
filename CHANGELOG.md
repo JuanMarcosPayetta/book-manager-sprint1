@@ -1,5 +1,10 @@
 # Changelog
 
+## [Ejercicio 3]
+- Definición de repositories.py con las interfaces IRepositorio, IRepositorioStock e IRepositorioCotizacionDolar.
+- Un repositorio por entidad y persistencia en archivo CSV.
+- Funciones auxiliares para evitar repetir el código de lectura y escritura.
+
 ## [Ejercicio 2]
 - Definicion de EntidadBase (abstracta) con id validado y metodos to_dict/from_dict.
 - Definicion de las clases Genero, Editorial, Moneda, TipoCotizacion, Libro, Precio, Stock y CotizacionDolar.
