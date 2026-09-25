@@ -1,5 +1,9 @@
 # Changelog
 
+## [Ejercicio 5]
+- Definicion de preload_data.py, que precarga 10 registros de cada entidad.
+- Generacion de los 8 archivos CSV en migrations/csv/.
+
 ## [Ejercicio 4]
 - Servicios de CRUD para las 8 entidades, que delegan en los repositorios.
 - ServicioStock con consultar_stock y descontar_stock, más StockInsuficienteError.
