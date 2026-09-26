@@ -1,5 +1,9 @@
 # Changelog
 
+## [Ejercicio 7]
+- Definición de main.py, punto de entrada del sistema.
+- El metodo main(import_default_data=False) en el archivo main.py, arma los repositorios y servicios, y lanza la consola.
+
 ## [Ejercicio 6]
 - Definicion de console.py, menu interactivo con un submenu por entidad.
 - Todas las operaciones pasan por los servicios, no por los repositorios.
