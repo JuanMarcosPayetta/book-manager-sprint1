@@ -1,5 +1,9 @@
 # Changelog
 
+## [Ejercicio 6]
+- Definicion de console.py, menu interactivo con un submenu por entidad.
+- Todas las operaciones pasan por los servicios, no por los repositorios.
+
 ## [Ejercicio 5]
 - Definicion de preload_data.py, que precarga 10 registros de cada entidad.
 - Generacion de los 8 archivos CSV en migrations/csv/.
