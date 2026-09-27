@@ -158,6 +158,9 @@ class Genero(EntidadBase):
     def from_dict(cls, datos: dict) -> "Genero":
         return cls(id=int(datos["id"]), nombre=str(datos["nombre"]))
 
+    def __repr__(self) -> str:
+        return f"Genero(id={self.id}, nombre={self.nombre})"
+
 
 class Editorial(EntidadBase):
     """Proveedor o distribuidora que provee libros a la librería."""
@@ -187,6 +190,9 @@ class Editorial(EntidadBase):
     @classmethod
     def from_dict(cls, datos: dict) -> "Editorial":
         return cls(id=int(datos["id"]), nombre=str(datos["nombre"]))
+
+    def __repr__(self) -> str:
+        return f"Editorial(id={self.id}, nombre={self.nombre})"
 
 
 class Moneda(EntidadBase):
@@ -221,6 +227,9 @@ class Moneda(EntidadBase):
     def from_dict(cls, datos: dict) -> "Moneda":
         return cls(id=int(datos["id"]), codigo=str(datos["codigo"]))
 
+    def __repr__(self) -> str:
+        return f"Moneda(id={self.id}, codigo={self.codigo})"
+
 
 class TipoCotizacion(EntidadBase):
     """Tipo de cotización del dólar (Oficial, Blue, MEP, etc.)."""
@@ -250,6 +259,9 @@ class TipoCotizacion(EntidadBase):
     @classmethod
     def from_dict(cls, datos: dict) -> "TipoCotizacion":
         return cls(id=int(datos["id"]), nombre=str(datos["nombre"]))
+
+    def __repr__(self) -> str:
+        return f"TipoCotizacion(id={self.id}, nombre={self.nombre})"
 
 
 class Libro(EntidadBase):
@@ -354,6 +366,9 @@ class Libro(EntidadBase):
             editorial_id=int(datos["editorial_id"]),
         )
 
+    def __repr__(self) -> str:
+        return f"Libro(id={self.id}, isbn={self.isbn}, titulo={self.titulo})"
+
 
 class Precio(EntidadBase):
     """Valor monetario asociado a un libro en una moneda determinada."""
@@ -416,6 +431,9 @@ class Precio(EntidadBase):
             monto=float(datos["monto"]),
         )
 
+    def __repr__(self) -> str:
+        return f"Precio(id={self.id}, libro_id={self.libro_id}, monto={self.monto})"
+
 
 class Stock(EntidadBase):
     """Cantidad disponible de un libro determinado."""
@@ -460,6 +478,10 @@ class Stock(EntidadBase):
             libro_id=int(datos["libro_id"]),
             cantidad=int(datos["cantidad"]),
         )
+
+    def __repr__(self) -> str:
+        return f"Stock(id={self.id}, libro_id={self.libro_id}, cantidad={self.cantidad})"
+
 
 
 class CotizacionDolar(EntidadBase):
@@ -525,4 +547,10 @@ class CotizacionDolar(EntidadBase):
             tipo_cotizacion_id=int(datos["tipo_cotizacion_id"]),
             fecha=date.fromisoformat(str(datos["fecha"])),
             valor=float(datos["valor"]),
+        )
+
+    def __repr__(self) -> str:
+        return (
+            f"CotizacionDolar(id={self.id}, tipo_cotizacion_id={self.tipo_cotizacion_id}, "
+            f"fecha={self.fecha.isoformat()}, valor={self.valor})"
         )
