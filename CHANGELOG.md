@@ -2,6 +2,7 @@
 
 ## [Checks] Celda de demostración no interactiva
 - Celda de demostración no interactiva en el notebook: listado, alta/modificación de las 8 entidades y lógica de negocio (descontar_stock, convertir).
+- Simulación de navegación de console.py (Libro, Genero, Precio en modo lectura), sin input() manual.
 
 ## [Ejercicio 7]
 - Definición de main.py, punto de entrada del sistema.
