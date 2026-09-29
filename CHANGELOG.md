@@ -1,5 +1,8 @@
 # Changelog
 
+## [Checks] Celda de demostración no interactiva
+- Celda de demostración no interactiva en el notebook: listado, alta/modificación de las 8 entidades y lógica de negocio (descontar_stock, convertir).
+
 ## [Ejercicio 7]
 - Definición de main.py, punto de entrada del sistema.
 - El metodo main(import_default_data=False) en el archivo main.py, arma los repositorios y servicios, y lanza la consola.
